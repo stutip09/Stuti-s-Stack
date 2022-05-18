@@ -1,15 +1,16 @@
 public class StackExpTestDay1
 {
-	public static double evalAns(String exp)
-	{
-		//Write your code here
-	}
-	
+ public static double evalAns(String exp)
+ {
+  int answer = 0;
+  int a = 0;
+ }
+ 
   public static void main(String[] args)
   {
     double answer, yourAns;
     String exp;
-		int c=0, w=0;
+  int c=0, w=0;
     
     exp = "256++";
     System.out.println("Testing Post-fix Single Digit Operation");
@@ -20,10 +21,10 @@ public class StackExpTestDay1
     yourAns = evalAns(exp);
     if(yourAns==answer){
       System.out.println("Pass");
-			c++;
+   c++;
     }else{
       System.out.println("Failed... Your answer: " + yourAns + "; Correct answer: " + answer);
-			w++;
+   w++;
     }
     
     System.out.println();
@@ -34,10 +35,10 @@ public class StackExpTestDay1
     yourAns = evalAns(exp);
     if(yourAns==answer){
       System.out.println("Pass");
-			c++;
+   c++;
     }else{
       System.out.println("Failed... Your answer: " + yourAns + "; Correct answer: " + answer);
-			w++;
+   w++;
     }
     
     System.out.println();
@@ -48,13 +49,13 @@ public class StackExpTestDay1
     yourAns = evalAns(exp);
     if(yourAns==answer){
       System.out.println("Pass");
-			c++;
+   c++;
     }else{
       System.out.println("Failed... Your answer: " + yourAns + "; Correct answer: " + answer);
-			w++;
+   w++;
     }
 
-		System.out.println();
+  System.out.println();
     exp = "12+3*23+%";
     System.out.println("Testing (1+2)*3%(2+3)");
     System.out.print("Postfix equivalent " + exp + "...");
@@ -62,13 +63,13 @@ public class StackExpTestDay1
     yourAns = evalAns(exp);
     if(yourAns==answer){
       System.out.println("Pass");
-			c++;
+   c++;
     }else{
       System.out.println("Failed... Your answer: " + yourAns + "; Correct answer: " + answer);
-			w++;
+   w++;
     }
 
-		System.out.println();
+  System.out.println();
     exp = "473%-!";
     System.out.println("Testing (4-7%3)!");
     System.out.print("Postfix equivalent " + exp + "...");
@@ -76,16 +77,16 @@ public class StackExpTestDay1
     yourAns = evalAns(exp);
     if(yourAns==answer){
       System.out.println("Pass");
-			c++;
+   c++;
     }else{
       System.out.println("Failed... Your answer: " + yourAns + "; Correct answer: " + answer);
-			w++;
+   w++;
     }
 
-		System.out.println();
-		System.out.println("Number of correct answer: " + c);
-		System.out.println("Number of incorect answer: " + w);
-		System.out.println("Accuracy: " + Math.round((double)c/(c+w)*100)/100 + "%");
+  System.out.println();
+  System.out.println("Number of correct answer: " + c);
+  System.out.println("Number of incorect answer: " + w);
+  System.out.println("Accuracy: " + Math.round((double)c/(c+w)*100)/100 + "%");
   }
 }
 
