@@ -2,8 +2,7 @@ public class StackExpTestDay1
 {
  public static double evalAns(String exp)
  {
-  int answer = 0;
-  int a = 0;
+  //Write your code here
  }
  
   public static void main(String[] args)
