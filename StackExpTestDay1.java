@@ -85,7 +85,7 @@ public class StackExpTestDay1
   System.out.println();
   System.out.println("Number of correct answer: " + c);
   System.out.println("Number of incorect answer: " + w);
-  System.out.println("Accuracy: " + Math.round((double)c/(c+w)*100)/100 + "%");
+  System.out.println("Accuracy: " + Math.round((double)c/(c+w)*10000)/100 + "%");
   }
 }
 
