@@ -12,7 +12,7 @@ public class StackExpTestDay2
     int c=0, w=0;
     
     exp = "2+5+6";
-    answer = "256++";
+    answer = "25+6+";
     System.out.println("Testing infix to postfix conversion for Single Digit Operation");
     System.out.println("Operations tested: +,-,*,/,%,^,!");
     System.out.println("Testing " + exp);
